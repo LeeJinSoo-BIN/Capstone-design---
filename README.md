@@ -73,7 +73,7 @@ VITON 데이터셋은 Try On task를 위한 데이터셋이다.<br>
 <br><br>
 
 ### 소개영상
-[![유튜브 이미지](http://img.youtube.com/vi/VHm2lB1ET0Y/0.jpg)](https://youtu.be/VHm2lB1ET0Y)
+[![유튜브 이미지](http://img.youtube.com/vi/VHm2lB1ET0Y/0.jpg)](https://youtu.be/VHm2lB1ET0Y)<br>
 https://www.youtube.com/watch?v=VHm2lB1ET0Y
 
 <br>
@@ -81,14 +81,13 @@ https://www.youtube.com/watch?v=VHm2lB1ET0Y
 
 ### 과제 보고서
 
-||
-|---|
-|요구사항 분석서|
-|수정 과제 계획서|
-|소프트웨어 설계서|
-|최종 보고서|
+|||
+|---|---|
+|요구사항 분석서|[링크](https://github.com/LeeJinSoo-BIN/CapstoneDesign_Closet-fairy/blob/master/readme%20img/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EB%B6%84%EC%84%9D%EC%84%9C.pdf)|
+|수정 과제 계획서|[링크](https://github.com/LeeJinSoo-BIN/CapstoneDesign_Closet-fairy/blob/master/readme%20img/%EC%88%98%EC%A0%95%20%EA%B3%BC%EC%A0%9C%20%EA%B3%84%ED%9A%8D%EC%84%9C.pdf)|
+|소프트웨어 설계서|[링크](https://github.com/LeeJinSoo-BIN/CapstoneDesign_Closet-fairy/blob/master/readme%20img/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%84%A4%EA%B3%84%EC%84%9C.pdf)|
+|최종 보고서|[링크](https://github.com/LeeJinSoo-BIN/CapstoneDesign_Closet-fairy/blob/master/readme%20img/%EC%B5%9C%EC%A2%85%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)|
 
-[링크]("readme img/소프트웨어 설계서.pdf")
 
 <br><br><br><br>
 
