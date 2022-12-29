@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header id="header">
+								<a href="/main" class="logo"><strong>Home</strong></a>
+							</header>
+							{% if error != None %}
+							<div><script>alert("{{error}}")</script></div>
+							{% endif %}
+							<form method="post">
+							<!-- Banner -->
+								<section id="banner">
+
+									<span class="image object">
+										<img src={{user_img}} style="WIDTH: 20em; HEIGHT: 30em" alt="" />
+									</span>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+									<div class="content">
+										<header>
+											<h1>Fitting Free!<br /><br /></h1>
+											<p>~~Explain~~</p>
+										</header>
+										<p>~~Explain~~</p>
+										<ul class="actions">
+											<input type = "submit" name = "Fitting" value = "Fitting!"></input>
+											&nbsp;&nbsp;&nbsp;
+											<input type = "submit" name = "Remove" value = "Remove" class = ""></input>
+										</ul>
+									</div>
+								</section>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Picked products</h2>
+									</header>
+									<div class="posts">
+										{% if cloth != None %}
+										{% for cl in cloth %}
+										<article>
+											<img src="{{cl.ImgPath}}/{{cl.ID}}.jpg" style="WIDTH: 20em; HEIGHT: 30em"/>
+											<h3>{{cl.ID}}</h3>
+											<p>{{cl.Description}}</p>
+											<ul class="actions">
+												<input type="checkbox" id="check{{cl.ID}}" name="{{cl.ID}}">
+												<label for="check{{cl.ID}}">Check!</label>
+											</ul>
+										 </article>
+										{% endfor %}
+										{% endif %}
+									</div>
+								</section>
+								
+							</form>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+					
+						<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>Menu</h2>
+							</header>
+							<br/><br/>
+
+							{% if g.user != None %}
+							<ul>
+								<li><button onclick = "location.href = '/logout'" style="WIDTH: 20em; HEIGHT: 4em" class = "large">{{ g.user.username }} Logout</button></li>
+								<li><button onclick = "location.href = '/cart'" style="WIDTH: 20em; HEIGHT: 4em" class = "large">{{ g.user.username }} To cart</button></li>
+								<li><button onclick = "location.href = '/regist'" style="WIDTH: 20em; HEIGHT: 4em" class = "large">{{ g.user.username }} Private Page </button></li>
+							</ul>
+									{% else %}
+									<ul>
+										<li><button onclick = "location.href = '/login'" style="WIDTH: 20em; HEIGHT: 4em" class = "large"> Login</button></li>
+										<li><button onclick = "location.href = '/signup'" style="WIDTH: 20em; HEIGHT: 4em" class = "large"> Signup</button></li>
+									</ul>
+									{% endif %}
+
+							<br/><br/><br/>
+							<form method="get">
+								<ul>
+									<li><button onclick = "location.href = '/main?cate=top'" type = "button" class = "button nav">Top</button></li>
+									<li><button onclick = "location.href = '/main?cate=bottom'" type = "button" class = "button nav">Bottom</button></li>
+									<li><button onclick = "location.href = '/main?cate=hat'" type = "button" class = "button nav">Hat</button></li>
+									<li><button onclick = "location.href = '/main?cate=outwear'" type = "button" class = "button nav">OutWear</button></li>
+									<li><button onclick = "location.href = '/main?cate=onepiece'" type = "button" class = "button nav">OnePiece</button></li>
+								</ul>
+							</form>
+						</nav>
+					</div>
+				</div>
+
+			</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
