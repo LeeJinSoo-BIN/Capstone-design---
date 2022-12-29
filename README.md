@@ -24,17 +24,14 @@
 의상의 기하변환을 수행하는  ***GMM(Geometric Matching Module)*** 과 <br>
 변환된 옷을 인체 이미지와 합성하는 ***TOM(Try-On Module)*** 으로 구성된 모델이다.<br>
 최종적으로 TOM을 통해 합성된 이미지를 얻기 위해서는 <br>
-    1. 사람 이미지
-    2. 사람 mask
-    3. 사람 parse
-    4. 사람 pose
-    5. 옷 이미지
-    6. 옷 mask
 
-    <br>
-    6개의 데이터를 필요로 한다. 이는 VITON dataset에서 모두 제공한다.
-    
-    <br>
+||||
+|:---|:----|:----|
+|1. 사람 이미지<br><img src="readme img/human.jpg">|2. 사람 mask<br><img src="readme img/human_mask.png">|3. 사람 parse<br><img src="readme img/human_parse.png">|
+|4. 사람 pose<br><img src="readme img/human_pose.png">|5. 옷 이미지<br><img src="readme img/dress.jpg">|6. 옷 mask<br><img src="readme img/dress_mask.jpg">|
+
+
+6개의 데이터를 필요로 한다. 이는 VITON dataset에서 모두 제공한다.<br>
 기존의 CP-VTON plus모델은 위와 같은 데이터가 모두 [VITON 데이터셋](#데이터셋)에서 제공되지만,<br>
 우리가 서비스 하고자 하는 상황에서는 1번과 5번, 즉 사람과 옷 이미지 외의 데이터는 미리 가지고 있기 힘들다.<br>   따라서 1번 이미지로 부터 2. 3. 4. 번의 이미지를, 5번 이미지로 부터 6번 이미지를 생성할 수 있도록 하였다. <br>
 이를 위해 사용한 모델과 기법은 아래와 같다.<br>
@@ -59,7 +56,28 @@
 <br>
 
 ### 데이터셋
-- **VITON** 
+- **VITON** <br>
+VITON 데이터셋은 Try On task를 위한 데이터셋이다.<br>
+14,221쌍의 train set, 2032쌍의 test set으로 구성되어있다.
+각 이미지 셋은 위에서 언급한 6개의 데이터로 구성되어있다.<br>
+
+||||
+|:---|:----|:----|
+|1. 사람 이미지<br><img src="readme img/human.jpg">|2. 사람 mask<br><img src="readme img/human_mask.png">|3. 사람 parse<br><img src="readme img/human_parse.png">|
+|4. 사람 pose<br><img src="readme img/human_pose.png">|5. 옷 이미지<br><img src="readme img/dress.jpg">|6. 옷 mask<br><img src="readme img/dress_mask.jpg">|
 
 
 
+[![유튜브 이미지](http://img.youtube.com/vi/VHm2lB1ET0Y/0.jpg)](https://youtu.be/VHm2lB1ET0Y)
+https://www.youtube.com/watch?v=VHm2lB1ET0Y
+
+<br><br><br><br>
+
+|| tool |
+| ------ | ------ |
+| 개발언어 | ![issue badge](https://img.shields.io/badge/Java-11-blue.svg) ![issue badge](https://img.shields.io/badge/javascript-blue.svg) ![issue badge](https://img.shields.io/badge/python-3-blue.svg) |
+| 데이터베이스 | ![issue badge](https://img.shields.io/badge/H2-1.4.200-lightgrey.svg) |
+| 웹 서버 | ![issue badge](https://img.shields.io/badge/Spring%20Framework-2.7.5-green.svg) ![issue badge](https://img.shields.io/badge/thymeleaf-gray.svg) ![issue badge](https://img.shields.io/badge/jQuery-gray.svg) ![issue badge](https://img.shields.io/badge/Bootstrap-gray.svg)  |
+| 모델 서버 | ![issue badge](https://img.shields.io/badge/mmdetection-2.25.2-green.svg) ![issue badge](https://img.shields.io/badge/torch-1.13.0+cu117-green.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg)|
+| 모델학습 환경 | NVIDIA-SMI 450.66 <br> Driver Version: 450.66 <br> CUDA Version: 11.0 <br> GeForce RTX 2080 Ti |
+| 개발환경 | Windows10 64bit <br> Ubuntu 18.04.2 LTS |
