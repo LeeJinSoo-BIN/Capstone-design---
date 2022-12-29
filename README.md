@@ -97,6 +97,6 @@ https://www.youtube.com/watch?v=VHm2lB1ET0Y
 | 개발언어 | ![issue badge](https://img.shields.io/badge/Python-3.9-blue.svg) ![issue badge](https://img.shields.io/badge/javascript-blue.svg) |
 | 데이터베이스 | ![issue badge](https://img.shields.io/badge/AWS-grey.svg) ![issue badge](https://img.shields.io/badge/DynamoDB-grey.svg) ![issue badge](https://img.shields.io/badge/Python-3.9-lightgrey.svg)|
 | 웹 페이지 UI | ![issue badge](https://img.shields.io/badge/HTML-5-green.svg) ![issue badge](https://img.shields.io/badge/CSS-gray.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg) ![issue badge](https://img.shields.io/badge/Bootstrap-gray.svg)  |
-| 모델 서버 | ![issue badge](https://img.shields.io/badge/CP%20VTON%20plus-2.25.2-green.svg) ![issue badge](https://img.shields.io/badge/pytorch-1.10.8+cu108-green.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg)|
+| 모델 서버 | ![issue badge](https://img.shields.io/badge/CP%20VTON-plus-green.svg) ![issue badge](https://img.shields.io/badge/pytorch-1.10.8+cu108-green.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg)|
 | 모델 개발 환경 | AMD Pyzen Threadripper PRO 3000WX <br> CUDA Version: 10.8 <br> NVIDIA RTX A5000 24GB |
 | 개발환경 | Windows10 64bit <br> Ubuntu 18.04.2 LTS |
