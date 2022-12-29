@@ -5,7 +5,11 @@
 > 분반 : 세종대학교 캡스톤디자인 컴공 001반 <br>
 > 팀명 : 옷장의 요정 <br>
 > 팀원 : 이진수, 김희재, 박형준, 오준석
-
+>> 팀원 별 역할 :<br>
+이진수 : 인공지능 모델 총괄 <br>
+김희재 : 팀장, 데이터베이스 구축 <br>
+박형준 : DB와의 연동, 홈페이지 프론트엔드<br>
+오준석 : 프론트 엔드와 벡엔드, 딥러닝 서버간의 상호작용
 -------
 
 <br>
@@ -66,18 +70,33 @@ VITON 데이터셋은 Try On task를 위한 데이터셋이다.<br>
 |1. 사람 이미지<br><img src="readme img/human.jpg">|2. 사람 mask<br><img src="readme img/human_mask.png">|3. 사람 parse<br><img src="readme img/human_parse.png">|
 |4. 사람 pose<br><img src="readme img/human_pose.png">|5. 옷 이미지<br><img src="readme img/dress.jpg">|6. 옷 mask<br><img src="readme img/dress_mask.jpg">|
 
+<br><br>
 
-
+### 소개영상
 [![유튜브 이미지](http://img.youtube.com/vi/VHm2lB1ET0Y/0.jpg)](https://youtu.be/VHm2lB1ET0Y)
 https://www.youtube.com/watch?v=VHm2lB1ET0Y
+
+<br>
+<br>
+
+### 과제 보고서
+
+||
+|---|
+|요구사항 분석서|
+|수정 과제 계획서|
+|소프트웨어 설계서|
+|최종 보고서|
+
+[링크]("readme img/소프트웨어 설계서.pdf")
 
 <br><br><br><br>
 
 || tool |
 | ------ | ------ |
-| 개발언어 | ![issue badge](https://img.shields.io/badge/Java-11-blue.svg) ![issue badge](https://img.shields.io/badge/javascript-blue.svg) ![issue badge](https://img.shields.io/badge/python-3-blue.svg) |
-| 데이터베이스 | ![issue badge](https://img.shields.io/badge/H2-1.4.200-lightgrey.svg) |
-| 웹 서버 | ![issue badge](https://img.shields.io/badge/Spring%20Framework-2.7.5-green.svg) ![issue badge](https://img.shields.io/badge/thymeleaf-gray.svg) ![issue badge](https://img.shields.io/badge/jQuery-gray.svg) ![issue badge](https://img.shields.io/badge/Bootstrap-gray.svg)  |
-| 모델 서버 | ![issue badge](https://img.shields.io/badge/mmdetection-2.25.2-green.svg) ![issue badge](https://img.shields.io/badge/torch-1.13.0+cu117-green.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg)|
-| 모델학습 환경 | NVIDIA-SMI 450.66 <br> Driver Version: 450.66 <br> CUDA Version: 11.0 <br> GeForce RTX 2080 Ti |
+| 개발언어 | ![issue badge](https://img.shields.io/badge/Python-3.9-blue.svg) ![issue badge](https://img.shields.io/badge/javascript-blue.svg) |
+| 데이터베이스 | ![issue badge](https://img.shields.io/badge/AWS-grey.svg) ![issue badge](https://img.shields.io/badge/DynamoDB-grey.svg) ![issue badge](https://img.shields.io/badge/Python-3.9-lightgrey.svg)|
+| 웹 페이지 UI | ![issue badge](https://img.shields.io/badge/HTML-5-green.svg) ![issue badge](https://img.shields.io/badge/CSS-gray.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg) ![issue badge](https://img.shields.io/badge/Bootstrap-gray.svg)  |
+| 모델 서버 | ![issue badge](https://img.shields.io/badge/CP%20VTON%20plus-2.25.2-green.svg) ![issue badge](https://img.shields.io/badge/pytorch-1.10.8+cu108-green.svg) ![issue badge](https://img.shields.io/badge/Flask-gray.svg)|
+| 모델 개발 환경 | AMD Pyzen Threadripper PRO 3000WX <br> CUDA Version: 10.8 <br> NVIDIA RTX A5000 24GB |
 | 개발환경 | Windows10 64bit <br> Ubuntu 18.04.2 LTS |
